@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar section -->
+
+    <section class="navbar bg-white flex justify-between py-6 sm:px-8 lg:px-16">
+      <div class="navbar-logo flex items-center max-w-[192px] gap-2">
+        <img src="./assets/logo.png" alt="" class="h-[4.63vh] w-[4.63vh]" />
+        <h2 class="text-[#006747] font-extrabold">Emergency Service</h2>
+      </div>
+      <div class="navbar-icon flex sm:gap-1 lg:gap-5 font-bold">
+        <div
+          class="flex gap-2.5 bg-[#41ff6b1a] sm:px-6 sm:py-2 lg:px-9 lg:py-3 justify-center items-center rounded-3xl"
+        >
+          <p id="heart-count">0</p>
+          <img
+            src="./assets/heart.png"
+            alt=""
+            class="max-h-[2.78vh] max-w-[2.78vh]"
+          />
+        </div>
+        <div
+          class="flex gap-2.5 bg-[#41ff6b1a] sm:px-6 sm:py-2 lg:px-9 lg:py-3 justify-center items-center rounded-3xl"
+        >
+          <p id="coin-count">100</p>
+          <img
+            src="./assets/coin.png"
+            alt=""
+            class="max-h-[2.22vh] max-w-[2.22vh]"
+          />
+        </div>
+        <div class="bg-[#00A63E] sm:px-6 sm:py-2 lg:px-9 lg:py-3 rounded-3xl">
+          <p class="text-white"><span id="copy-count">2</span> Copy</p>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section -->
+    <section
+      class="banner bg-[linear-gradient(90deg,#013123_0%,#006747_50%,#013223_100%)] text-white"
+    >
+      <img
+        src="./assets/logo-dark.png"
+        alt=""
+        class="mx-auto h-[8.52vh] w-[8.52vh]"
+      />
+      <h1 class="text-center font-bold">Emergency Service Directory</h1>
+      <h3 class="text-center">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </h3>
+    </section>
+  </body>
+</html>

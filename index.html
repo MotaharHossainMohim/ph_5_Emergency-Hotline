@@ -78,7 +78,9 @@
 
     <!-- Main Section -->
     <!-- Card Container -->
-    <section>
+    <section
+      class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7.5 bg-[#F5FFF6] pt-12 px-15 pb-21.5"
+    >
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 col-span-3 gap-7.5">
         <!-- National Emergency Number -->
         <div class="border-2 border-blue-400 bg-white rounded-xl p-8 shadow-lg">
@@ -333,7 +335,19 @@
           </button>
         </div>
       </div>
-      
+      <!-- Call history -->
+      <div class="border-2 border-blue-400 rounded-xl bg-white">
+        <div class="flex justify-between items-center">
+          <h3>
+            <i class="fa-regular fa-clock text-gray-600"></i>
+            <span class="pl-1">Call History</span>
+          </h3>
+          <button class="btn bg-green-600 text-white px-9 rounded-4xl">
+            Clear
+          </button>
+        </div>
+        <div></div>
+      </div>
     </section>
 
     <script src="script.js"></script>

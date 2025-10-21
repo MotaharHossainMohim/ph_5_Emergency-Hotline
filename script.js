@@ -17,4 +17,40 @@ for (let heart of hearts) {
   });
 }
 
-// call button
+// call button 
+const calls = document.querySelectorAll(".call-btn");
+const callHistoryContainer = document.getElementById("call-history-cont");
+for (let call of calls) {
+  call.addEventListener("click", function () {
+    let coins = getInnertext("coin-count");
+
+    if (coins < 20) {
+      alert("Sorry, you don’t have sufficient coins for this call.");
+      return;
+    }
+    document.getElementById("coin-count").innerText = coins - 20;
+    const card = call.closest(".card-container");
+    const serviceName = card.querySelector(".card-title").innerText;
+    const serviceNumber = card.querySelector(".contact-num").innerText;
+
+    alert(`Calling to ${serviceName} at ${serviceNumber}`);
+
+    const localTime = new Date().toLocaleTimeString("en-US", { hour12: true });
+    const history = document.createElement("div");
+    history.className =
+      "call-history flex justify-between items-center bg-gray-50 p-4 mt-2 rounded-lg";
+
+    history.innerHTML = `
+    <div>
+    <h3 class="text-md font-bold">${serviceName}</h3>
+    <h4 class-"text-md">${serviceNumber}</h4>
+    </div>
+    <h4>${localTime}</h4>`;
+    callHistoryContainer.append(history);
+  });
+}
+// clear button
+document.getElementById("clear-btn").addEventListener("click", function () {
+  callHistoryContainer.innerHTML = "";
+});
+

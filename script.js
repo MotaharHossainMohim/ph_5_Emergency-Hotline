@@ -16,3 +16,5 @@ for (let heart of hearts) {
     countHeart.innerText = getInnertext("heart-click-count") + 1;
   });
 }
+
+// call button

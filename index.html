@@ -22,7 +22,7 @@
     />
   </head>
 
-  <body>
+  <body class="min-h[25vh]">
     <!-- Navbar section -->
     <section class="navbar bg-white flex justify-between py-6 sm:px-8 lg:px-16">
       <div class="navbar-logo flex items-center max-w-[192px] gap-2">
@@ -53,7 +53,7 @@
         <div
           class="bg-[#00A63E] px-6 py-2 lg:px-9 lg:py-3 rounded-3xl flex justify-center items-center"
         >
-          <p class="text-white"><span id="copy-count">2</span> Copy</p>
+          <p class="text-white"><span id="copy-count"></span> Copy</p>
         </div>
       </div>
     </section>
@@ -83,7 +83,7 @@
     >
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 col-span-3 gap-7.5">
         <!-- National Emergency Number -->
-        <div class=" bg-white rounded-xl p-8 shadow-lg">
+        <div class="card-container bg-white rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
             <img
               src="./assets/emergency.png"
@@ -96,26 +96,28 @@
             National Emergency Number
           </h3>
           <h4>National Emergency</h4>
-          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl">999</h2>
+          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl contact-num">
+            999
+          </h2>
           <h4 class="bg-gray-100 rounded-2xl inline-block px-4 py-1.5 mb-6">
             All
           </h4>
           <br />
-          <div class="flex justify-between">
+          <div class="flex justify-between gap-2">
             <button
-              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 sm:max-w-[5vh] lg:max-w-[18vh] copy-btn"
+              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 w-1/2 gap-2 copy-btn"
             >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl sm:max-w-[5vh] lg:max-w-[18vh] call-btn"
+              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl w-1/2 gap-2 call-btn"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <!-- police -->
-        <div class=" bg-white rounded-xl p-8 shadow-lg">
+        <div class="card-container bg-white rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
             <img
               src="./assets/police.png"
@@ -128,26 +130,28 @@
             Police Helpline Number
           </h3>
           <h4>Police</h4>
-          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl">999</h2>
+          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl contact-num">
+            999
+          </h2>
           <h4 class="bg-gray-100 rounded-2xl inline-block px-4 py-1.5 mb-6">
             Police
           </h4>
           <br />
-          <div class="flex justify-between">
+          <div class="flex justify-between gap-2">
             <button
-              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 sm:max-w-[5vh] lg:max-w-[18vh] copy-btn"
+              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 w-1/2 gap-2 copy-btn"
             >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl sm:max-w-[5vh] lg:max-w-[18vh] call-btn"
+              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl w-1/2 gap-2 call-btn"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <!-- Fire Service -->
-        <div class=" bg-white rounded-xl p-8 shadow-lg">
+        <div class="card-container bg-white rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
             <img
               src="./assets/fire-service.png"
@@ -160,26 +164,28 @@
             Fire Service Number
           </h3>
           <h4>Fire Service</h4>
-          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl">999</h2>
+          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl contact-num">
+            999
+          </h2>
           <h4 class="bg-gray-100 rounded-2xl inline-block px-4 py-1.5 mb-6">
             Fire
           </h4>
           <br />
-          <div class="flex justify-between">
+          <div class="flex justify-between gap-2">
             <button
-              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 sm:max-w-[5vh] lg:max-w-[18vh] copy-btn"
+              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 w-1/2 gap-2 copy-btn"
             >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl sm:max-w-[5vh] lg:max-w-[18vh] call-btn"
+              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl w-1/2 gap-2 call-btn"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <!-- Ambulance Service-->
-        <div class=" bg-white rounded-xl p-8 shadow-lg">
+        <div class="card-container bg-white rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
             <img
               src="./assets/ambulance.png"
@@ -192,26 +198,28 @@
             Ambulance Service
           </h3>
           <h4>Ambulance</h4>
-          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl">1994-999999</h2>
+          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl contact-num">
+            1994-999999
+          </h2>
           <h4 class="bg-gray-100 rounded-2xl inline-block px-4 py-1.5 mb-6">
             Helth
           </h4>
           <br />
-          <div class="flex justify-between">
+          <div class="flex justify-between gap-2">
             <button
-              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 sm:max-w-[5vh] lg:max-w-[18vh] copy-btn"
+              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 w-1/2 gap-2 copy-btn"
             >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl sm:max-w-[5vh] lg:max-w-[18vh] call-btn"
+              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl w-1/2 gap-2 call-btn"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <!-- Women & Child Helpline-->
-        <div class=" bg-white rounded-xl p-8 shadow-lg">
+        <div class="card-container bg-white rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
             <img
               src="./assets/emergency.png"
@@ -224,26 +232,28 @@
             Women & Child Helpliner
           </h3>
           <h4>Women & Child Helpline</h4>
-          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl">109</h2>
+          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl contact-num">
+            109
+          </h2>
           <h4 class="bg-gray-100 rounded-2xl inline-block px-4 py-1.5 mb-6">
             Help
           </h4>
           <br />
-          <div class="flex justify-between">
+          <div class="flex justify-between gap-2">
             <button
-              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 sm:max-w-[5vh] lg:max-w-[18vh] copy-btn"
+              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 w-1/2 gap-2 copy-btn"
             >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl sm:max-w-[5vh] lg:max-w-[18vh] call-btn"
+              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl w-1/2 gap-2 call-btn"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <!-- Anti-Corruption Helpline -->
-        <div class=" bg-white rounded-xl p-8 shadow-lg">
+        <div class="card-container bg-white rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
             <img
               src="./assets/emergency.png"
@@ -256,26 +266,28 @@
             Anti-Corruption Helpline
           </h3>
           <h4>Anti-Corruptiony</h4>
-          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl">106</h2>
+          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl contact-num">
+            106
+          </h2>
           <h4 class="bg-gray-100 rounded-2xl inline-block px-4 py-1.5 mb-6">
             Govt.
           </h4>
           <br />
           <div class="flex justify-between gap-2">
             <button
-              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 sm:max-w-[5vh] lg:max-w-[18vh] copy-btn"
+              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 w-1/2 gap-2 copy-btn"
             >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl sm:max-w-[5vh] lg:max-w-[18vh] call-btn"
+              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl w-1/2 gap-2 call-btn"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <!-- Electricity Helpline -->
-        <div class=" bg-white rounded-xl p-8 shadow-lg">
+        <div class="card-container bg-white rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
             <img
               src="./assets/emergency.png"
@@ -288,26 +300,28 @@
             Electricity Helpline
           </h3>
           <h4>Electricity Outage</h4>
-          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl">16216</h2>
+          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl contact-num">
+            16216
+          </h2>
           <h4 class="bg-gray-100 rounded-2xl inline-block px-4 py-1.5 mb-6">
             Electricity
           </h4>
           <br />
-          <div class="flex justify-between">
+          <div class="flex justify-between gap-2">
             <button
-              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 sm:max-w-[5vh] lg:max-w-[18vh] copy-btn"
+              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 w-1/2 gap-2 copy-btn"
             >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl sm:max-w-[5vh] lg:max-w-[18vh] call-btn"
+              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl w-1/2 gap-2 call-btn"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <!-- Brac Helpline -->
-        <div class=" bg-white rounded-xl p-8 shadow-lg">
+        <div class="card-container bg-white rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
             <img
               src="./assets/emergency.png"
@@ -318,26 +332,28 @@
           </div>
           <h3 class="font-bold mb-0.5 sm:text-xl lg:text-2xl">Brac Helpline</h3>
           <h4>Brac</h4>
-          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl">16445</h2>
+          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl contact-num">
+            16445
+          </h2>
           <h4 class="bg-gray-100 rounded-2xl inline-block px-4 py-1.5 mb-6">
             NGO
           </h4>
           <br />
-          <div class="flex justify-between">
+          <div class="flex justify-between gap-2">
             <button
-              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 sm:max-w-[5vh] lg:max-w-[18vh] copy-btn"
+              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 w-1/2 gap-2 copy-btn"
             >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl sm:max-w-[5vh] lg:max-w-[18vh] call-btn"
+              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl w-1/2 gap-2 call-btn"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <!-- Bangladesh Railway Helpline  -->
-        <div class=" bg-white rounded-xl p-8 shadow-lg">
+        <div class="card-container bg-white rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
             <img
               src="./assets/emergency.png"
@@ -350,19 +366,21 @@
             Bangladesh Railway Helpline
           </h3>
           <h4>Bangladesh Railway</h4>
-          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl">163</h2>
+          <h2 class="font-bold mb-0.5 sm:text-2xl lg:text-4xl contact-num">
+            163
+          </h2>
           <h4 class="bg-gray-100 rounded-2xl inline-block px-4 py-1.5 mb-6">
             Travel
           </h4>
           <br />
-          <div class="flex justify-between">
+          <div class="flex justify-between gap-2">
             <button
-              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 sm:max-w-[5vh] lg:max-w-[18vh] copy-btn"
+              class="btn text-gray-600 text-center sm:px-13 lg:px-15.5 rounded-xl border-gray-300 w-1/2 gap-2 copy-btn"
             >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl sm:max-w-[5vh] lg:max-w-[18vh] call-btn"
+              class="btn bg-green-600 text-white sm:px-13 lg:px-15.5 rounded-xl w-1/2 gap-2 call-btn"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
@@ -370,18 +388,18 @@
         </div>
       </div>
       <!-- Call history -->
-      <div class="border-2 border-blue-400 rounded-xl bg-white">
-        <div class="flex justify-between items-center">
-          <h3>
+      <div class="rounded-xl bg-white shadow-lg row-span-3 p-8">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-lg font-bold">
             <i class="fa-regular fa-clock text-gray-600"></i>
             <span class="pl-1">Call History</span>
           </h3>
-          <button class="btn bg-green-600 text-white px-9 rounded-4xl">
+          <button class="btn bg-green-600 text-white px-9 rounded-4xl" id="clear-btn">
             Clear
           </button>
         </div>
-        <div>
-          
+        <div id="call-history-cont">
+
         </div>
       </div>
     </section>

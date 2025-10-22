@@ -24,14 +24,16 @@
 
   <body class="min-h[25vh]">
     <!-- Navbar section -->
-    <section class="navbar bg-white flex justify-between py-6 sm:px-8 lg:px-16">
+    <section
+      class="navbar bg-white flex flex-col gap-3 lg:gap-0 lg:flex-row justify-between py-6 sm:px-8 lg:px-16"
+    >
       <div class="navbar-logo flex items-center max-w-[192px] gap-2">
         <img src="./assets/logo.png" alt="" class="h-[4.63vh] w-[4.63vh]" />
         <h2 class="text-[#006747] font-extrabold">Emergency Service</h2>
       </div>
-      <div class="navbar-icon flex sm:gap-1 lg:gap-5 font-bold">
+      <div class="navbar-icon flex gap-5 font-bold">
         <div
-          class="flex gap-2.5 bg-[#41ff6b1a] sm:px-6 sm:py-2 lg:px-9 lg:py-3 justify-center items-center rounded-3xl"
+          class="flex gap-2.5 bg-[#41ff6b1a] px-9 py-3 justify-center items-center rounded-3xl"
         >
           <p id="heart-click-count">0</p>
           <img
@@ -41,7 +43,7 @@
           />
         </div>
         <div
-          class="flex gap-2.5 bg-[#41ff6b1a] sm:px-6 sm:py-2 lg:px-9 lg:py-3 justify-center items-center rounded-3xl"
+          class="flex gap-2.5 bg-[#41ff6b1a] px-9 py-3 justify-center items-center rounded-3xl"
         >
           <p id="coin-count">100</p>
           <img
@@ -51,7 +53,7 @@
           />
         </div>
         <div
-          class="bg-[#00A63E] px-6 py-2 lg:px-9 lg:py-3 rounded-3xl flex justify-center items-center"
+          class="bg-[#00A63E] px-9 py-3 rounded-3xl flex justify-center items-center"
         >
           <p class="text-white"><span id="copy-count">2</span> Copy</p>
         </div>
@@ -408,7 +410,7 @@
         </div>
       </div>
       <!-- Call history -->
-      <div class="rounded-xl bg-white shadow-lg row-span-3 p-8">
+      <div class="rounded-xl bg-white shadow-lg col-span-3 lg:col-span-1 p-8">
         <div class="flex justify-between items-center mb-4">
           <h3 class="text-lg font-bold">
             <i class="fa-regular fa-clock text-gray-600"></i>

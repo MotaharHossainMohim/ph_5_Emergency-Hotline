@@ -17,7 +17,7 @@ for (let heart of hearts) {
   });
 }
 
-// call button 
+// call button
 const calls = document.querySelectorAll(".call-btn");
 const callHistoryContainer = document.getElementById("call-history-cont");
 for (let call of calls) {
@@ -54,3 +54,20 @@ document.getElementById("clear-btn").addEventListener("click", function () {
   callHistoryContainer.innerHTML = "";
 });
 
+// copy button
+let copyCount = document.getElementById("copy-count");
+let copyButtons = document.querySelectorAll(".copy-btn");
+
+for (let btn of copyButtons) {
+  btn.addEventListener("click", function () {
+    let card = this.closest(".card-container");
+    let number = card.querySelector(".contact-num").innerText;
+
+    navigator.clipboard.writeText(number).then(() => {
+      let count = parseInt(copyCount.innerText);
+      copyCount.innerText = count + 1;
+
+      alert(`Hotline number ${number} copied to clipboard!`);
+    });
+  });
+}
